@@ -95,10 +95,10 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
             fragmenteManager.beginTransaction().replace(R.id.contenedor, new ListarAsistencia()).commit();
 
-        } else if (id == R.id.nav_share) {
-
         } else if (id == R.id.nav_send) {
-
+            Intent inten = new Intent();
+            inten.setClass(this, MainActivity.class);
+            startActivity(inten);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
